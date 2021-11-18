@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  api-node:
+    build: api-node
+    ports:
+      - 8080:8081
+    volumes:
+      - ./api-node:/app
+
+  api-python:
+    build: api-python
+    links:
+      - api-node
+    ports:
+      - 8090:8081
+    volumes:
+      - ./api-python:/app
