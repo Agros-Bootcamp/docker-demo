@@ -8,6 +8,13 @@ services:
     volumes:
       - ./api-node:/app
 
+  node-services:
+    build: node-services
+    ports:
+      - 8081:8081
+    volumes:
+      - ./node-services:/app
+
   api-python:
     build: api-python
     links:
