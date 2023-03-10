@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "FastAPI OK [API version: 0.2.1]!!!"}
+    return {"message": "FastAPI OK [API version: 0.3.0]!!!"}

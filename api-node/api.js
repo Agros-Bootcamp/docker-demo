@@ -5,7 +5,7 @@ const app = express()
 const PORT = 8081
 
 app.get('/', (req, res)=>{
-    res.send("NodeJS OK [API version: 0.2.2]!!!");
+    res.send({"message": "NodeJS OK [API version: 0.3.0]!!!"});
 });
 
 app.listen(PORT, ()=>{
